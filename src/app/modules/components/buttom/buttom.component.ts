@@ -1,11 +1,14 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-buttom',
   templateUrl: './buttom.component.html',
-  styleUrls: ['./buttom.component.css']
+  styleUrls: ['./buttom.component.scss']
 })
 export class ButtomComponent implements OnInit {
+
+  @Input()
+  disabled: boolean = false;
 
   @Output()
   onclick: EventEmitter<null> = new EventEmitter;

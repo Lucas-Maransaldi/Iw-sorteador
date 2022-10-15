@@ -3,6 +3,7 @@
 
     <app-pick-field [values]="['1','2','3','4','5']" [formControl]="formControl"></app-pick-field>
     <app-buttom
+      [disabled]="formControl.invalid"
       (onclick)="_handlerDraw($event)"
     >
       Sortear

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 import { tap } from 'rxjs';
 
 @Component({
@@ -14,11 +14,11 @@ export class MainPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.formControl = new FormControl('', {});
-    this.formControl.valueChanges.subscribe(x => console.log(x));
+    this.formControl = new FormControl('', Validators.required);
   }
 
   _handlerDraw(e: null): void {
+    console.log('meu pau')
     // // Shuffle array
     // const shuffled = array.sort(() => 0.5 - Math.random());
 
