@@ -1,0 +1,21 @@
+.field-item {
+    cursor: pointer;
+    
+    border-color: #755513;
+    color: #755513;
+}
+
+:host-context(.--selected) {
+    .field-item {
+        border-color: #F6BE45;
+        color: #F6BE45;
+    }
+}
+
+:host-context(.--disabled) {
+    .field-item {
+        cursor: not-allowed;
+        color: gray;
+        border-color: gray;
+    }
+}

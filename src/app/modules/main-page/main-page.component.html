@@ -1,0 +1,16 @@
+<section class="flex justify-center items-center h-screen">
+  <app-card class="h-3/5 w-2/4">
+
+    <app-pick-field [values]="['1','2','3','4','5']" [formControl]="formControl"></app-pick-field>
+    <app-buttom
+      (onclick)="_handlerDraw($event)"
+    >
+      Sortear
+    </app-buttom>
+  </app-card>
+  <!-- <app-card class="card-personagem p1"></app-card>
+  <app-card class="card-personagem p2"></app-card>
+  <app-card class="card-personagem p3"></app-card>
+  <app-card class="card-personagem p4"></app-card>
+  <app-card class="card-personagem p5"></app-card> -->
+</section>

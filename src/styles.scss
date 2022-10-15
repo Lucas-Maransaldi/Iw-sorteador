@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    background-image: url("assets/img/fundo.png");
+}
+
+@layer components {
+    .card {
+      background-color: theme('colors.white');
+      border-radius: theme('borderRadius.lg');
+      padding: theme('spacing.6');
+      box-shadow: theme('boxShadow.xl');
+    }
+    /* ... */
+}
+
+/* .p1 .padding {
+  background-image: url("assets/img/characters/P1.png");
+}
+.p2 {
+  background-image: url(/src/assets/img/characters/P2.png);
+}
+.p3 {
+  background-image: url(/src/assets/img/characters/P3.png);
+}
+.p4 {
+  background-image: url(/src/assets/img/characters/P4.png);
+}
+.p5 {
+  background-image: url(/src/assets/img/characters/P5.png);
+} */

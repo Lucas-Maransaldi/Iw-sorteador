@@ -1,0 +1,10 @@
+<div class="flex">
+  <app-field 
+    *ngFor="let item of values"
+    class="mx-2"
+    [value]="item"
+    [ngClass]="(item === _selectedValue) ? '--selected': ''"
+    (clicked)="_setSelected($event)"
+  >
+  </app-field>
+</div>
