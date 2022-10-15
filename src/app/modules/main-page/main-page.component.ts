@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-main-page',
