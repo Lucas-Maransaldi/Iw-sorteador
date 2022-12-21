@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         yellowIw: {
           100: '#F6BE45',
+          400: '#F0B128',
           900: '#EAA30B'
         },
         brownIw: '#755513'

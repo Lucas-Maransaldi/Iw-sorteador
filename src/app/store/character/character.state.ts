@@ -1,4 +1,4 @@
-import { Character } from "src/models/character";
+import { Character, defaultCharacters } from "src/models/character";
 
 export interface CharacterState {
     allUsers: Character[];
@@ -7,7 +7,7 @@ export interface CharacterState {
 }
 
 export const characterInitialState: CharacterState = {
-    allUsers: [],
-    currentUsers: [],
+    allUsers: defaultCharacters,
+    currentUsers: defaultCharacters,
     winners: []
 }

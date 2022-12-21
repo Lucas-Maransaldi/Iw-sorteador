@@ -1,10 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EffectsModule } from '@ngrx/effects';
+import { CharacterEffects } from 'src/app/store/character/character.effects';
 import { ButtomModule } from '../components/buttom/buttom.module';
 
 import { CardModule } from '../components/card/card/card.module';
 import { PickFieldModule } from '../components/pick-field/pick-field.module';
+import { WinnersPageComponent } from '../winners-page/winners-page.component';
 import { MainPageComponent } from './main-page.component';
 import { MainPageRoutes } from './main-page.routing';
 
@@ -15,8 +18,9 @@ import { MainPageRoutes } from './main-page.routing';
     CardModule,
     ButtomModule,
     PickFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    EffectsModule.forFeature([CharacterEffects])
   ],
-  declarations: [MainPageComponent]
+  declarations: [MainPageComponent, WinnersPageComponent]
 })
 export class MainPageModule { }

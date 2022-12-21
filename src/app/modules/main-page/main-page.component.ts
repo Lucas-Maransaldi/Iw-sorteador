@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { CharacterService } from 'src/app/services/character.service';
 
 @Component({
   selector: 'app-main-page',
@@ -10,18 +11,13 @@ export class MainPageComponent implements OnInit {
 
   formControl: FormControl;
 
-  constructor() { }
+  constructor(private characterService: CharacterService) { }
 
   ngOnInit() {
     this.formControl = new FormControl('', Validators.required);
   }
 
-  _handlerDraw(e: null): void {
-    console.log('meu pau')
-    // // Shuffle array
-    // const shuffled = array.sort(() => 0.5 - Math.random());
-
-    // // Get sub-array of first n elements after shuffled
-    // let selected = shuffled.slice(0, n);
+  _handlerDraw(e: Event): void {
+    this.characterService.drawUsers(this.formControl.value);
   }
 }
