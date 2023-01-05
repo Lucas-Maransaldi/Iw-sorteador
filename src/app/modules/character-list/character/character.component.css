@@ -1,0 +1,69 @@
+.border-character {
+    position: relative;
+    border: 8px solid var(--borda-escura);
+    border-top: 8px solid var(--borda-clara);
+    border-left: 8px solid var(--borda-clara);
+}
+
+.border-character--top {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    border-top: 8px solid var(--borda-clara);
+    border-left: 8px solid var(--borda-clara);
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.border-character--bottom {
+    background: black;
+    width: 260px;
+    height: 50px;
+    top: 450px;
+    left: -30px;
+    border-top: 8px solid var(--borda-clara);
+    border-bottom: 8px solid var(--borda-escura);
+    border-left: 8px solid var(--borda-clara);
+    border-right: 8px solid var(--borda-escura);
+    position: absolute;
+}
+
+.border-character--bottom::after {
+    content: "";
+    border-top: 15px solid var(--borda-escura);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    width: 260px;
+    position: absolute;
+    top: 42px;
+    right: -8px;
+}
+
+.border-character--bottom::before {
+    content: "";
+    border-bottom: 15px solid var(--borda-clara);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    width: 260px;
+    position: absolute;
+    top: -23px;
+    right: -8px;
+}
+
+.character-placeholder {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    background: gray;
+    cursor: pointer;
+}
+
+.border-character__name{
+    color: white;
+    text-align: center;
+    padding-top: 4px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+

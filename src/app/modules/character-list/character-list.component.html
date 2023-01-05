@@ -1,0 +1,11 @@
+<div *ngIf="_winners$ | async as winners"
+  class="flex justify-center items-center gap-x-14"  
+>
+
+  <app-character *ngFor="let winner of winners"
+    [character]="winner"
+  >
+
+  </app-character>
+
+</div>

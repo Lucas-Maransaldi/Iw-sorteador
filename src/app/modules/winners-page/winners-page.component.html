@@ -1,8 +1,7 @@
-<app-card class="h-1/6 w-2/4" *ngIf="_numberOfWinners > 0">
-
+<app-card class="h-1/6 w-2/4" *ngIf="_numberOfWinners > 0 && _reveled">
   <div>
     <p>
-      ✨ INFINITE WORLD ✨ Parabéns {{_winnersDiscordRef}} 
+      ✨ INFINITE WORLD ✨ Parabéns <b>{{_winnersDiscordRef}}</b> 
         <span *ngIf="_numberOfWinners === 1">
           você foi escolhido para participar da sessão do dia {{_diaSessao}} das 20:00 ás 01:00! 
           Caso não possua disponibilidade você pode guardar seu Ticket para qualquer Sessão dessa Fila 🤖 

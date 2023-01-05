@@ -2,9 +2,10 @@ export interface Character {
     name: string;
     imageName: string;
     discordRefer: string;
+    isReveled?: boolean;
 }
 
-export const defaultCharacters: Character[]= 
+export const defaultCharacters: Character[] = 
     [
         {
             "name": "andarilho",
@@ -13,12 +14,12 @@ export const defaultCharacters: Character[]=
         },
         {
             "name": "apollo dragick",
-            "imageName": "apollo dragick",
+            "imageName": "apollo",
             "discordRefer": "apollo dragick"
         },
         {
             "name": "lorde asterion",
-            "imageName": "lorde asterion",
+            "imageName": "asterion",
             "discordRefer": "lorde asterion"
         },
         {
@@ -27,18 +28,13 @@ export const defaultCharacters: Character[]=
             "discordRefer": "azafael"
         },
         {
-            "name": "balter nunu",
-            "imageName": "balter nunu",
-            "discordRefer": "balter nunu"
-        },
-        {
             "name": "bharashi dzelk",
-            "imageName": "bharashi dzelk",
+            "imageName": "barash",
             "discordRefer": "bharashi dzelk"
         },
         {
             "name": "carlos vilaca",
-            "imageName": "carlos vilaca",
+            "imageName": "carlos",
             "discordRefer": "carlos vilaca"
         },
         {
@@ -58,8 +54,13 @@ export const defaultCharacters: Character[]=
         },
         {
             "name": "drum walker",
-            "imageName": "drum walker",
+            "imageName": "drum",
             "discordRefer": "drum walker"
+        },
+        {
+            "name": "etrilo",
+            "imageName": "etrilo",
+            "discordRefer": "etrilo"
         },
         {
             "name": "elizabeth",
@@ -67,19 +68,29 @@ export const defaultCharacters: Character[]=
             "discordRefer": "elizabeth"
         },
         {
-            "name": "fenris",
-            "imageName": "fenris",
-            "discordRefer": "fenris"
+            "name": "percybal",
+            "imageName": "percybal",
+            "discordRefer": "percybal"
         },
         {
-            "name": "gunner gnik",
-            "imageName": "gunner gnik",
-            "discordRefer": "gunner gnik"
+            "name": "aidan",
+            "imageName": "aidan",
+            "discordRefer": "aidan"
         },
         {
-            "name": "hayasen",
-            "imageName": "hayasen",
-            "discordRefer": "hayasen"
+            "name": "ilidro",
+            "imageName": "ilidro",
+            "discordRefer": "ilidro"
+        },
+        {
+            "name": "hanzo",
+            "imageName": "hanzo",
+            "discordRefer": "hanzo"
+        },
+        {
+            "name": "koa kai",
+            "imageName": "koa kai",
+            "discordRefer": "koa kai"
         },
         {
             "name": "jared",
@@ -97,13 +108,13 @@ export const defaultCharacters: Character[]=
             "discordRefer": "kass"
         },
         {
-            "name": "keyng",
-            "imageName": "keyng",
-            "discordRefer": "keyng"
+            "name": "nhom",
+            "imageName": "nhom",
+            "discordRefer": "nhom"
         },
         {
             "name": "klaus gallard",
-            "imageName": "klaus gallard",
+            "imageName": "klaus",
             "discordRefer": "klaus gallard"
         },
         {
@@ -117,33 +128,23 @@ export const defaultCharacters: Character[]=
             "discordRefer": "lusin"
         },
         {
-            "name": "pinno kyoh",
-            "imageName": "pinno kyoh",
-            "discordRefer": "pinno kyoh"
-        },
-        {
-            "name": "salazar",
-            "imageName": "salazar",
-            "discordRefer": "salazar"
-        },
-        {
             "name": "scarlett",
-            "imageName": "scarlett",
+            "imageName": "scarlet",
             "discordRefer": "scarlett"
         },
         {
             "name": "solaris ignatius",
-            "imageName": "solaris ignatius",
+            "imageName": "solaris",
             "discordRefer": "solaris ignatius"
         },
         {
             "name": "stephen curri",
-            "imageName": "stephen curri",
+            "imageName": "stephen",
             "discordRefer": "stephen curri"
         },
         {
             "name": "takeshi hayashi",
-            "imageName": "takeshi hayashi",
+            "imageName": "takeshi",
             "discordRefer": "takeshi hayashi"
         },
         {

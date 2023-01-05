@@ -16,6 +16,13 @@ html {
     /* ... */
 }
 
+:root {
+  --borda-clara: #F6BE45;
+  --borda-escura: #EAA30B;
+  // --borda-clara: #B07C0F;
+  // --borda-escura: #755513;
+}
+
 /* .p1 .padding {
   background-image: url("assets/img/characters/P1.png");
 }

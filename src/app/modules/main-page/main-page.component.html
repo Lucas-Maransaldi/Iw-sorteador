@@ -1,12 +1,22 @@
-<section class="flex justify-center items-center h-screen flex-col gap-y-16">
-  <app-card class="h-1/6 w-2/4">
+<section class="flex justify-center items-center h-screen flex-col gap-y-10">
+  <app-card class="w-2/4">
 
     <h1 class="text-yellowIw-900 text-2xl font-bold mb-6">Sorteador Iw</h1>
+
+    <div class="mb-4">
+      Users esperando sorteio: <span>{{_waitingToBeDrawedUsers}}</span> / <span>{{_allUsers}}</span>
+    </div>
 
     <div class="flex justify-between">
       <app-pick-field [values]="['1','2','3','4','5']" [formControl]="formControl"></app-pick-field>
       <app-buttom
-        [disabled]="formControl.invalid"
+        [disabled]="_waitingToBeDrawedUsers !== 0"
+        (onclick)="_handlerReset($event)"
+      >
+        Reset
+      </app-buttom>
+      <app-buttom
+        [disabled]="formControl.invalid || _waitingToBeDrawedUsers === 0"
         (onclick)="_handlerDraw($event)"
       >
         Sortear
@@ -14,5 +24,10 @@
     </div>
 
   </app-card>
-  <app-winners-page class="w-2/4" ></app-winners-page>
+
+
+  <div class="w-screen flex-col gap-y-14 items-center flex">
+    <app-character-list></app-character-list>
+    <app-winners-page class="w-2/4" ></app-winners-page>
+  </div>
 </section>

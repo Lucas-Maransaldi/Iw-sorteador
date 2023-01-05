@@ -1,0 +1,8 @@
+<div class="border-character backdrop-blur-xl bg-white bg-opacity-50 drop-shadow-lg" (click)="_reavelcharacter($event)">
+  <div class="border-character--top"></div>
+  <div *ngIf="hidden" class="character-placeholder">
+    <img src="assets/img/characters/corrente.png">
+  </div>
+  <img [src]="_buildImage()">
+  <div *ngIf="!hidden" class="border-character--bottom border-character__name"> {{character.name}}</div>
+</div>

@@ -13,6 +13,7 @@ export class WinnersPageComponent implements OnInit, OnDestroy {
   _winnersDiscordRef: string;
   _numberOfWinners: number;
   _diaSessao: string = '20/12';
+  _reveled: boolean;
 
   _destroy$: EventEmitter<void> = new EventEmitter<void>;
 
@@ -24,6 +25,11 @@ export class WinnersPageComponent implements OnInit, OnDestroy {
       .subscribe((users) => {
         this._buildDiscordRef(users);
         this._numberOfWinners = users.length;
+      })
+    this._characterService.getReveled()
+      .pipe(takeUntil(this._destroy$))
+      .subscribe((isAllCharactersReveled) => {
+        this._reveled = isAllCharactersReveled;
       })
   }
   

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EffectsModule } from '@ngrx/effects';
 import { CharacterEffects } from 'src/app/store/character/character.effects';
+import { CharacterListModule } from '../character-list/character-list.module';
 import { ButtomModule } from '../components/buttom/buttom.module';
 
 import { CardModule } from '../components/card/card/card.module';
@@ -19,6 +20,7 @@ import { MainPageRoutes } from './main-page.routing';
     ButtomModule,
     PickFieldModule,
     ReactiveFormsModule,
+    CharacterListModule,
     EffectsModule.forFeature([CharacterEffects])
   ],
   declarations: [MainPageComponent, WinnersPageComponent]
